@@ -4,8 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
-    <title>万益通平台发布 暨重点商户签约会
-    </title>
+    <title>万益通平台发布暨重点商户签约会</title>
     <style>
         html {
             height: 100%;
@@ -29,9 +28,9 @@
         <img src="./img/weiXinShareImg.png">
     </div>
     <!-- copy these lines to your document: -->
-    <audio style="display:none; height: 0" id="bg-music" preload="auto" src="./%25E4%25B8%2587%25E7%259B%258A%25E9%2580%259A%25E5%2593%2581%25E7%2589%258C%25E5%2590%2588%25E4%25BD%259C%25E9%2582%2580%25E8%25AF%25B7%25E5%2587%25BD.hyperesources/Summer%20Days%20Short%20Loop.mp3" loop="loop"></audio>
+
     <div id="万益通品牌合作邀请函_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;">
-        <script type="text/javascript" charset="utf-8" src="%E4%B8%87%E7%9B%8A%E9%80%9A%E5%93%81%E7%89%8C%E5%90%88%E4%BD%9C%E9%82%80%E8%AF%B7%E5%87%BD.hyperesources/%E4%B8%87%E7%9B%8A%E9%80%9A%E5%93%81%E7%89%8C%E5%90%88%E4%BD%9C%E9%82%80%E8%AF%B7%E5%87%BD_hype_generated_script.js?66503"></script>
+        <script type="text/javascript" charset="utf-8" src="%E4%B8%87%E7%9B%8A%E9%80%9A%E5%93%81%E7%89%8C%E5%90%88%E4%BD%9C%E9%82%80%E8%AF%B7%E5%87%BD.hyperesources/%E4%B8%87%E7%9B%8A%E9%80%9A%E5%93%81%E7%89%8C%E5%90%88%E4%BD%9C%E9%82%80%E8%AF%B7%E5%87%BD_hype_generated_script.js?58888"></script>
     </div>
 
     <!-- end copy -->
@@ -48,37 +47,7 @@
     </div>
 
     <!-- end text content: -->
-    <script>
-        // 音乐播放
-        function autoPlayMusic() {
-            // 自动播放音乐效果，解决浏览器或者APP自动播放问题
-            function musicInBrowserHandler() {
-                musicPlay(true);
-                document.body.removeEventListener('touchstart', musicInBrowserHandler);
-            }
-            document.body.addEventListener('touchstart', musicInBrowserHandler);
 
-            // 自动播放音乐效果，解决微信自动播放问题
-            function musicInWeixinHandler() {
-                musicPlay(true);
-                document.addEventListener("WeixinJSBridgeReady", function () {
-                    musicPlay(true);
-                }, false);
-                document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
-            }
-            document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
-        }
-
-        function musicPlay(isPlay) {
-            var media = document.querySelector('#bg-music');
-            if (isPlay && media.paused) {
-                media.play();
-            }
-            if (!isPlay && !media.paused) {
-                media.pause();
-            }
-        }
-    </script>
 </body>
 
 </html>
