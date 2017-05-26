@@ -27,6 +27,10 @@
     <div style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
         <img src="./img/weiXinShareImg.png">
     </div>
+    <audio controls="controls" id="music" loop="loop" style="display: none">
+        <source src="./audio/Summer.mp3" type="audio/ogg" />
+        <source src="./audio/Summer.ogg" type="audio/ogg" />
+    </audio>
     <!-- copy these lines to your document: -->
 
     <div id="万益通品牌合作邀请函_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;">
@@ -47,7 +51,11 @@
     </div>
 
     <!-- end text content: -->
-
+    <script>
+        Media = document.getElementById("music");
+        Media.src = "./assets/sound/music.mp3";
+        Media.play();
+    </script>
 </body>
 
 </html>
