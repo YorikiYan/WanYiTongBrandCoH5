@@ -26,7 +26,7 @@
 
 <body>
     <!-- copy these lines to your document: -->
-    <audio src="./%25E4%25B8%2587%25E7%259B%258A%25E9%2580%259A%25E5%2593%2581%25E7%2589%258C%25E5%2590%2588%25E4%25BD%259C%25E9%2582%2580%25E8%25AF%25B7%25E5%2587%25BD.hyperesources/Summer%20Days%20Short%20Loop.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio style="display:none; height: 0" id="bg-music" preload="auto" src="./%25E4%25B8%2587%25E7%259B%258A%25E9%2580%259A%25E5%2593%2581%25E7%2589%258C%25E5%2590%2588%25E4%25BD%259C%25E9%2582%2580%25E8%25AF%25B7%25E5%2587%25BD.hyperesources/Summer%20Days%20Short%20Loop.mp3" loop="loop"></audio>
     <div id="万益通品牌合作邀请函_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;">
         <script type="text/javascript" charset="utf-8" src="%E4%B8%87%E7%9B%8A%E9%80%9A%E5%93%81%E7%89%8C%E5%90%88%E4%BD%9C%E9%82%80%E8%AF%B7%E5%87%BD.hyperesources/%E4%B8%87%E7%9B%8A%E9%80%9A%E5%93%81%E7%89%8C%E5%90%88%E4%BD%9C%E9%82%80%E8%AF%B7%E5%87%BD_hype_generated_script.js?66503"></script>
     </div>
@@ -45,7 +45,18 @@
     </div>
 
     <!-- end text content: -->
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function audioAutoPlay() {
+                var audio = document.getElementById('bg-music');
+                audio.play();
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    audio.play();
+                }, false);
+            }
+            audioAutoPlay();
+        });
+    </script>
 </body>
 
 </html>
